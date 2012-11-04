@@ -28,6 +28,15 @@
 		83E923171646AD7300EA067F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E922EA1646AD7200EA067F /* CoreData.framework */; };
 		83E9231F1646AD7300EA067F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83E9231D1646AD7300EA067F /* InfoPlist.strings */; };
 		83E923221646AD7300EA067F /* CoreDataBackgroundTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E923211646AD7300EA067F /* CoreDataBackgroundTestTests.m */; };
+		83E9232D1646ADA300EA067F /* CEDatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E9232C1646ADA300EA067F /* CEDatabaseAccess.m */; };
+		83E9236F1646B4B900EA067F /* CoreDataBackgroundTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83E922FE1646AD7200EA067F /* CoreDataBackgroundTest.xcdatamodeld */; };
+		83FAF9F6164842AF0049B1AA /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FAF9F5164842AF0049B1AA /* Item.m */; };
+		83FAF9FA164842AF0049B1AA /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FAF9F9164842AF0049B1AA /* Category.m */; };
+		83FAF9FD164842AF0049B1AA /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FAF9FC164842AF0049B1AA /* Event.m */; };
+		83FAFA1016485CB70049B1AA /* CECategoryUnreadCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FAFA0F16485CB70049B1AA /* CECategoryUnreadCount.m */; };
+		83FAFA1316485EC60049B1AA /* CEObserveNestedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FAFA1216485EC60049B1AA /* CEObserveNestedValue.m */; };
+		97AB68CFACD64149A80DE1CD /* libPods-CoreDataBackgroundTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E209DF54C2284DCE89FB7768 /* libPods-CoreDataBackgroundTestTests.a */; };
+		F39C90A3516D4324A2E76684 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 847CCEB32CAB465EBB162E1E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079D58E01FBE42DAB0AFED62 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6CF63BD41C51449C8D14A26B /* Pods-CoreDataBackgroundTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBackgroundTestTests.xcconfig"; path = "Pods/Pods-CoreDataBackgroundTestTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		83E922E01646AD7200EA067F /* CoreDataBackgroundTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataBackgroundTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83E922E41646AD7200EA067F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		83E922E61646AD7200EA067F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		83E922E81646AD7200EA067F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		83E922EA1646AD7200EA067F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83E922E41646AD7200EA067F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83E922E61646AD7200EA067F /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83E922E81646AD7200EA067F /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83E922EA1646AD7200EA067F /* CoreData.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		83E922EE1646AD7200EA067F /* CoreDataBackgroundTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataBackgroundTest-Info.plist"; sourceTree = "<group>"; };
 		83E922F01646AD7200EA067F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83E922F21646AD7200EA067F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,11 +74,25 @@
 		83E923081646AD7200EA067F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEMasterViewController.xib; sourceTree = "<group>"; };
 		83E9230B1646AD7200EA067F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEDetailViewController.xib; sourceTree = "<group>"; };
 		83E923121646AD7300EA067F /* CoreDataBackgroundTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataBackgroundTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83E923131646AD7300EA067F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		83E923131646AD7300EA067F /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		83E9231C1646AD7300EA067F /* CoreDataBackgroundTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataBackgroundTestTests-Info.plist"; sourceTree = "<group>"; };
 		83E9231E1646AD7300EA067F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83E923201646AD7300EA067F /* CoreDataBackgroundTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataBackgroundTestTests.h; sourceTree = "<group>"; };
 		83E923211646AD7300EA067F /* CoreDataBackgroundTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataBackgroundTestTests.m; sourceTree = "<group>"; };
+		83E9232B1646ADA300EA067F /* CEDatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDatabaseAccess.h; sourceTree = "<group>"; };
+		83E9232C1646ADA300EA067F /* CEDatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDatabaseAccess.m; sourceTree = "<group>"; };
+		83FAF9F4164842AF0049B1AA /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		83FAF9F5164842AF0049B1AA /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		83FAF9F8164842AF0049B1AA /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		83FAF9F9164842AF0049B1AA /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		83FAF9FB164842AF0049B1AA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		83FAF9FC164842AF0049B1AA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		83FAFA0E16485CB70049B1AA /* CECategoryUnreadCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECategoryUnreadCount.h; sourceTree = "<group>"; };
+		83FAFA0F16485CB70049B1AA /* CECategoryUnreadCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECategoryUnreadCount.m; sourceTree = "<group>"; };
+		83FAFA1116485EC60049B1AA /* CEObserveNestedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEObserveNestedValue.h; sourceTree = "<group>"; };
+		83FAFA1216485EC60049B1AA /* CEObserveNestedValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEObserveNestedValue.m; sourceTree = "<group>"; };
+		847CCEB32CAB465EBB162E1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E209DF54C2284DCE89FB7768 /* libPods-CoreDataBackgroundTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataBackgroundTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +104,7 @@
 				83E922E71646AD7200EA067F /* Foundation.framework in Frameworks */,
 				83E922E91646AD7200EA067F /* CoreGraphics.framework in Frameworks */,
 				83E922EB1646AD7200EA067F /* CoreData.framework in Frameworks */,
+				F39C90A3516D4324A2E76684 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +116,7 @@
 				83E923151646AD7300EA067F /* UIKit.framework in Frameworks */,
 				83E923161646AD7300EA067F /* Foundation.framework in Frameworks */,
 				83E923171646AD7300EA067F /* CoreData.framework in Frameworks */,
+				97AB68CFACD64149A80DE1CD /* libPods-CoreDataBackgroundTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +130,8 @@
 				83E9231A1646AD7300EA067F /* CoreDataBackgroundTestTests */,
 				83E922E31646AD7200EA067F /* Frameworks */,
 				83E922E11646AD7200EA067F /* Products */,
+				079D58E01FBE42DAB0AFED62 /* Pods.xcconfig */,
+				6CF63BD41C51449C8D14A26B /* Pods-CoreDataBackgroundTestTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +152,8 @@
 				83E922E81646AD7200EA067F /* CoreGraphics.framework */,
 				83E922EA1646AD7200EA067F /* CoreData.framework */,
 				83E923131646AD7300EA067F /* SenTestingKit.framework */,
+				847CCEB32CAB465EBB162E1E /* libPods.a */,
+				E209DF54C2284DCE89FB7768 /* libPods-CoreDataBackgroundTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +161,11 @@
 		83E922EC1646AD7200EA067F /* CoreDataBackgroundTest */ = {
 			isa = PBXGroup;
 			children = (
+				83FAF9FE164842B30049B1AA /* Model Objects */,
 				83E922F51646AD7200EA067F /* CEAppDelegate.h */,
 				83E922F61646AD7200EA067F /* CEAppDelegate.m */,
+				83E9232B1646ADA300EA067F /* CEDatabaseAccess.h */,
+				83E9232C1646ADA300EA067F /* CEDatabaseAccess.m */,
 				83E923011646AD7200EA067F /* CEMasterViewController.h */,
 				83E923021646AD7200EA067F /* CEMasterViewController.m */,
 				83E923041646AD7200EA067F /* CEDetailViewController.h */,
@@ -177,6 +211,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		83FAF9FE164842B30049B1AA /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				83FAF9FB164842AF0049B1AA /* Event.h */,
+				83FAF9FC164842AF0049B1AA /* Event.m */,
+				83FAF9F8164842AF0049B1AA /* Category.h */,
+				83FAF9F9164842AF0049B1AA /* Category.m */,
+				83FAF9F4164842AF0049B1AA /* Item.h */,
+				83FAF9F5164842AF0049B1AA /* Item.m */,
+				83FAFA0E16485CB70049B1AA /* CECategoryUnreadCount.h */,
+				83FAFA0F16485CB70049B1AA /* CECategoryUnreadCount.m */,
+				83FAFA1116485EC60049B1AA /* CEObserveNestedValue.h */,
+				83FAFA1216485EC60049B1AA /* CEObserveNestedValue.m */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,6 +238,7 @@
 				83E922DC1646AD7200EA067F /* Sources */,
 				83E922DD1646AD7200EA067F /* Frameworks */,
 				83E922DE1646AD7200EA067F /* Resources */,
+				98763D1AE11A4328BD987059 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +257,7 @@
 				83E9230E1646AD7300EA067F /* Frameworks */,
 				83E9230F1646AD7300EA067F /* Resources */,
 				83E923101646AD7300EA067F /* ShellScript */,
+				F9177AE29DAC4D35A3A93924 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +335,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		98763D1AE11A4328BD987059 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		F9177AE29DAC4D35A3A93924 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CoreDataBackgroundTestTests-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,6 +375,12 @@
 				83E923001646AD7200EA067F /* CoreDataBackgroundTest.xcdatamodeld in Sources */,
 				83E923031646AD7200EA067F /* CEMasterViewController.m in Sources */,
 				83E923061646AD7200EA067F /* CEDetailViewController.m in Sources */,
+				83E9232D1646ADA300EA067F /* CEDatabaseAccess.m in Sources */,
+				83FAF9F6164842AF0049B1AA /* Item.m in Sources */,
+				83FAF9FA164842AF0049B1AA /* Category.m in Sources */,
+				83FAF9FD164842AF0049B1AA /* Event.m in Sources */,
+				83FAFA1016485CB70049B1AA /* CECategoryUnreadCount.m in Sources */,
+				83FAFA1316485EC60049B1AA /* CEObserveNestedValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E923221646AD7300EA067F /* CoreDataBackgroundTestTests.m in Sources */,
+				83E9236F1646B4B900EA067F /* CoreDataBackgroundTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +491,19 @@
 		};
 		83E923261646AD7300EA067F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079D58E01FBE42DAB0AFED62 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataBackgroundTest/CoreDataBackgroundTest-Prefix.pch";
 				INFOPLIST_FILE = "CoreDataBackgroundTest/CoreDataBackgroundTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,6 +511,7 @@
 		};
 		83E923271646AD7300EA067F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079D58E01FBE42DAB0AFED62 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataBackgroundTest/CoreDataBackgroundTest-Prefix.pch";
@@ -425,6 +523,7 @@
 		};
 		83E923291646AD7300EA067F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF63BD41C51449C8D14A26B /* Pods-CoreDataBackgroundTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataBackgroundTest.app/CoreDataBackgroundTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -442,6 +541,7 @@
 		};
 		83E9232A1646AD7300EA067F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF63BD41C51449C8D14A26B /* Pods-CoreDataBackgroundTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataBackgroundTest.app/CoreDataBackgroundTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -476,6 +576,7 @@
 				83E923271646AD7300EA067F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83E923281646AD7300EA067F /* Build configuration list for PBXNativeTarget "CoreDataBackgroundTestTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +585,7 @@
 				83E9232A1646AD7300EA067F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
